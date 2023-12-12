@@ -14,7 +14,5 @@ files[] = {"id":"19930815-26fbf653-08e2-43d1-b14b-1abec13479bf","path":"Api Glik
 [config.relations.collections.metaData]
 
 [config.relations.apiDefinition]
-files[] = {"path":"index.json","metaData":{}}
 
 [config.relations.apiDefinition.metaData]
-type = openapi:3

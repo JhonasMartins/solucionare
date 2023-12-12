@@ -202,6 +202,47 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Busca processos - Retorna todos os codProcessos Cadastrados",
+			"id": "90a9009c-2d08-4851-a377-0e0aa889337e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://advocacia.inovajuris.com.br/api/AndamentoProcessual/BuscaQuantidadeAndamentosDisponiveis?NomeRelacional={NomeRelacional}&Token={Token}&codEscritorio={codEscritorio}",
+					"protocol": "https",
+					"host": [
+						"advocacia",
+						"inovajuris",
+						"com",
+						"br"
+					],
+					"path": [
+						"api",
+						"AndamentoProcessual",
+						"BuscaQuantidadeAndamentosDisponiveis"
+					],
+					"query": [
+						{
+							"key": "NomeRelacional",
+							"value": "{NomeRelacional}"
+						},
+						{
+							"key": "Token",
+							"value": "{Token}"
+						},
+						{
+							"key": "codEscritorio",
+							"value": "{codEscritorio}"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
