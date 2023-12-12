@@ -79,6 +79,47 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Confirma recebimento de atualização de capa do processo",
+			"id": "b906b012-357d-4211-bf18-97d4b14beaf7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n  {\n    \"codProcesso\": 1,\n    \"codEscritorio\": 2\n  },\n  {\n    \"codProcesso\": 1,\n    \"codEscritorio\": 2\n  }\n]"
+				},
+				"url": {
+					"raw": "https://advocacia.inovajuris.com.br/api/AndamentoProcessual/ConfirmaRecebimentoProcessosComCapaAtualizada?NomeRelacional={NomeRelacional}&Token={Token}",
+					"protocol": "https",
+					"host": [
+						"advocacia",
+						"inovajuris",
+						"com",
+						"br"
+					],
+					"path": [
+						"api",
+						"AndamentoProcessual",
+						"ConfirmaRecebimentoProcessosComCapaAtualizada"
+					],
+					"query": [
+						{
+							"key": "NomeRelacional",
+							"value": "{NomeRelacional}"
+						},
+						{
+							"key": "Token",
+							"value": "{Token}"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
