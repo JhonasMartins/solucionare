@@ -120,6 +120,88 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Busca uma lista de processos que tiveram atualização de capa realizada",
+			"id": "eb29c906-98ee-4fa0-884b-481cab9c7ca5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://advocacia.inovajuris.com.br/api/AndamentoProcessual/BuscaProcessosComCapaAtualizada?NomeRelacional={NomeRelacional}&Token={Token}&codEscritorio={codEscritorio}",
+					"protocol": "https",
+					"host": [
+						"advocacia",
+						"inovajuris",
+						"com",
+						"br"
+					],
+					"path": [
+						"api",
+						"AndamentoProcessual",
+						"BuscaProcessosComCapaAtualizada"
+					],
+					"query": [
+						{
+							"key": "NomeRelacional",
+							"value": "{NomeRelacional}"
+						},
+						{
+							"key": "Token",
+							"value": "{Token}"
+						},
+						{
+							"key": "codEscritorio",
+							"value": "{codEscritorio}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retorna a quantidade de andamentos disponíveis para consumo - podendo ser filtrado por escritório",
+			"id": "980d1a9b-087b-4ddb-a779-51779863d227",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://advocacia.inovajuris.com.br/api/AndamentoProcessual/BuscaQuantidadeAndamentosDisponiveis?NomeRelacional={NomeRelacional}&Token={Token}&codEscritorio={codEscritorio}",
+					"protocol": "https",
+					"host": [
+						"advocacia",
+						"inovajuris",
+						"com",
+						"br"
+					],
+					"path": [
+						"api",
+						"AndamentoProcessual",
+						"BuscaQuantidadeAndamentosDisponiveis"
+					],
+					"query": [
+						{
+							"key": "NomeRelacional",
+							"value": "{NomeRelacional}"
+						},
+						{
+							"key": "Token",
+							"value": "{Token}"
+						},
+						{
+							"key": "codEscritorio",
+							"value": "{codEscritorio}"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
