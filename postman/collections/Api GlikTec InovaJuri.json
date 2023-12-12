@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "26fbf653-08e2-43d1-b14b-1abec13479bf",
+		"name": "Api GlikTec InovaJuri",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "19930815-26fbf653-08e2-43d1-b14b-1abec13479bf"
+	},
+	"item": [
+		{
+			"name": "Retorna lista com os status atuais das abrengências",
+			"id": "0d17c7d4-60a7-4774-a48e-06ec5d2400a4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://advocacia.inovajuris.com.br/api/AndamentoProcessual/BuscaStatusSistemas?NomeRelacional=inovajuris&Token=b93bb884d72a1bda9ec5d08efc6354c5\n",
+					"protocol": "https",
+					"host": [
+						"advocacia",
+						"inovajuris",
+						"com",
+						"br"
+					],
+					"path": [
+						"api",
+						"AndamentoProcessual",
+						"BuscaStatusSistemas"
+					],
+					"query": [
+						{
+							"key": "NomeRelacional",
+							"value": "inovajuris"
+						},
+						{
+							"key": "Token",
+							"value": "b93bb884d72a1bda9ec5d08efc6354c5\n"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retorna lista com a abrangência atendida",
+			"id": "84edd926-8d8e-4053-b843-344b15b04154",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://advocacia.inovajuris.com.br/api/AndamentoProcessual/BuscaAbrangencia?NomeRelacional={NomeRelacional}&Token={token}",
+					"protocol": "https",
+					"host": [
+						"advocacia",
+						"inovajuris",
+						"com",
+						"br"
+					],
+					"path": [
+						"api",
+						"AndamentoProcessual",
+						"BuscaAbrangencia"
+					],
+					"query": [
+						{
+							"key": "NomeRelacional",
+							"value": "{NomeRelacional}"
+						},
+						{
+							"key": "Token",
+							"value": "{token}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
