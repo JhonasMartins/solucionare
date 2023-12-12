@@ -243,6 +243,47 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Retorna dados de Capa e status atualizado dos processos filtrando por Processos",
+			"id": "e5c7f9a1-60f1-4a0f-9c8b-e0c4ce5a1830",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n  1,\n  2\n]"
+				},
+				"url": {
+					"raw": "https://advocacia.inovajuris.com.br/api/AndamentoProcessual/BuscaDadosCapaEStatusVariosProcessos?NomeRelacional={NomeRelacional}&Token={Token}\n",
+					"protocol": "https",
+					"host": [
+						"advocacia",
+						"inovajuris",
+						"com",
+						"br"
+					],
+					"path": [
+						"api",
+						"AndamentoProcessual",
+						"BuscaDadosCapaEStatusVariosProcessos"
+					],
+					"query": [
+						{
+							"key": "NomeRelacional",
+							"value": "{NomeRelacional}"
+						},
+						{
+							"key": "Token",
+							"value": "{Token}\n"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
