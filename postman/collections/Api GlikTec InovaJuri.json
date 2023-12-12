@@ -284,6 +284,438 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Busca uma lista de processos que tiveram atualização de capa realizada",
+			"id": "fa67d9b3-29d9-4e9f-b17d-4a51b9b49344",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://advocacia.inovajuris.com.br/api/AndamentoProcessual/BuscaProcessosComCapaAtualizada?NomeRelacional={NomeRelacional}&Token={Token}&codEscritorio={codEscritorio}",
+					"protocol": "https",
+					"host": [
+						"advocacia",
+						"inovajuris",
+						"com",
+						"br"
+					],
+					"path": [
+						"api",
+						"AndamentoProcessual",
+						"BuscaProcessosComCapaAtualizada"
+					],
+					"query": [
+						{
+							"key": "NomeRelacional",
+							"value": "{NomeRelacional}"
+						},
+						{
+							"key": "Token",
+							"value": "{Token}"
+						},
+						{
+							"key": "codEscritorio",
+							"value": "{codEscritorio}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retorna a quantidade de andamentos disponíveis para consumo - podendo ser filtrado por escritório",
+			"id": "370fd748-3f53-4e05-887e-72e5aff92979",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://advocacia.inovajuris.com.br/api/AndamentoProcessual/BuscaQuantidadeAndamentosDisponiveis?NomeRelacional={NomeRelacional}&Token={Token}&codEscritorio={codEscritorio}",
+					"protocol": "https",
+					"host": [
+						"advocacia",
+						"inovajuris",
+						"com",
+						"br"
+					],
+					"path": [
+						"api",
+						"AndamentoProcessual",
+						"BuscaQuantidadeAndamentosDisponiveis"
+					],
+					"query": [
+						{
+							"key": "NomeRelacional",
+							"value": "{NomeRelacional}"
+						},
+						{
+							"key": "Token",
+							"value": "{Token}"
+						},
+						{
+							"key": "codEscritorio",
+							"value": "{codEscritorio}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busca processos - Retorna todos os codProcessos Cadastrados",
+			"id": "bb1daa36-a4b5-40f6-b849-84b8800f1220",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://advocacia.inovajuris.com.br/api/AndamentoProcessual/BuscaProcessosCadastrados?NomeRelacional={NomeRelacional}&Token={Token}\n",
+					"protocol": "https",
+					"host": [
+						"advocacia",
+						"inovajuris",
+						"com",
+						"br"
+					],
+					"path": [
+						"api",
+						"AndamentoProcessual",
+						"BuscaProcessosCadastrados"
+					],
+					"query": [
+						{
+							"key": "NomeRelacional",
+							"value": "{NomeRelacional}"
+						},
+						{
+							"key": "Token",
+							"value": "{Token}\n"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retorna dados de Capa e status atualizado dos processos filtrando por Processos",
+			"id": "c07a8ef7-3501-4027-8f64-d6ce5acf3970",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://advocacia.inovajuris.com.br/api/AndamentoProcessual/BuscaDadosCapaEStatusVariosProcessos?NomeRelacional={NomeRelacional}&Token={Token}",
+					"protocol": "https",
+					"host": [
+						"advocacia",
+						"inovajuris",
+						"com",
+						"br"
+					],
+					"path": [
+						"api",
+						"AndamentoProcessual",
+						"BuscaDadosCapaEStatusVariosProcessos"
+					],
+					"query": [
+						{
+							"key": "NomeRelacional",
+							"value": "{NomeRelacional}"
+						},
+						{
+							"key": "Token",
+							"value": "{Token}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Método usado para confirmar o download de documentos",
+			"id": "1ad5436c-f5d6-4b85-ad44-3e43f96ecd24",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://advocacia.inovajuris.com.br/api/AndamentoProcessual/ConfirmaRecebimentoDocumento?NomeRelacional={NomeRelacional}&Token={Token}\t",
+					"protocol": "https",
+					"host": [
+						"advocacia",
+						"inovajuris",
+						"com",
+						"br"
+					],
+					"path": [
+						"api",
+						"AndamentoProcessual",
+						"ConfirmaRecebimentoDocumento"
+					],
+					"query": [
+						{
+							"key": "NomeRelacional",
+							"value": "{NomeRelacional}"
+						},
+						{
+							"key": "Token",
+							"value": "{Token}\t"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busca todos os documentos disponíveis que ainda não possui o recebimento confirmado",
+			"id": "222acb79-c135-4e71-9085-d81af7e4a187",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://advocacia.inovajuris.com.br/api/AndamentoProcessual/BuscaNovosDocumentos?NomeRelacional={NomeRelacional}&Token={Token}",
+					"protocol": "https",
+					"host": [
+						"advocacia",
+						"inovajuris",
+						"com",
+						"br"
+					],
+					"path": [
+						"api",
+						"AndamentoProcessual",
+						"BuscaNovosDocumentos"
+					],
+					"query": [
+						{
+							"key": "NomeRelacional",
+							"value": "{NomeRelacional}"
+						},
+						{
+							"key": "Token",
+							"value": "{Token}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busca Lista de processos - Retorna dados dos processos da lista de codProcessos passada",
+			"id": "0e91b9ea-7b5f-44f7-af6b-1b6dc7b0debd",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://advocacia.inovajuris.com.br/api/AndamentoProcessual/BuscaListaProcessos?NomeRelacional={NomeRelacional}&Token={Token}",
+					"protocol": "https",
+					"host": [
+						"advocacia",
+						"inovajuris",
+						"com",
+						"br"
+					],
+					"path": [
+						"api",
+						"AndamentoProcessual",
+						"BuscaListaProcessos"
+					],
+					"query": [
+						{
+							"key": "NomeRelacional",
+							"value": "{NomeRelacional}"
+						},
+						{
+							"key": "Token",
+							"value": "{Token}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busca todos os processos cadastrados filtrando a data de cadastro",
+			"id": "17efa126-6331-4c68-96d7-500b184b0af3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://advocacia.inovajuris.com.br/api/AndamentoProcessual/BuscaProcessosCadastradosEntreDatas?NomeRelacional={NomeRelacional}&Token={Token}&DataInicial={DataInicial}&DataFinal={DataFinal}",
+					"protocol": "https",
+					"host": [
+						"advocacia",
+						"inovajuris",
+						"com",
+						"br"
+					],
+					"path": [
+						"api",
+						"AndamentoProcessual",
+						"BuscaProcessosCadastradosEntreDatas"
+					],
+					"query": [
+						{
+							"key": "NomeRelacional",
+							"value": "{NomeRelacional}"
+						},
+						{
+							"key": "Token",
+							"value": "{Token}"
+						},
+						{
+							"key": "DataInicial",
+							"value": "{DataInicial}"
+						},
+						{
+							"key": "DataFinal",
+							"value": "{DataFinal}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Método usado para confirmar o download de andamentos processuais",
+			"id": "a588900c-f009-448d-bf57-15c422ec9460",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://advocacia.inovajuris.com.br/api/AndamentoProcessual/ConfirmaRecebimentoAndamento?NomeRelacional={NomeRelacional}&Token={Token}",
+					"protocol": "https",
+					"host": [
+						"advocacia",
+						"inovajuris",
+						"com",
+						"br"
+					],
+					"path": [
+						"api",
+						"AndamentoProcessual",
+						"ConfirmaRecebimentoAndamento"
+					],
+					"query": [
+						{
+							"key": "NomeRelacional",
+							"value": "{NomeRelacional}"
+						},
+						{
+							"key": "Token",
+							"value": "{Token}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retorna lista com 500 registros de novos andamentos de um escritório com download ainda não confirmado",
+			"id": "4f9d8698-090e-404b-b20c-1064047fb9e5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://advocacia.inovajuris.com.br/api/AndamentoProcessual/BuscaNovosAndamentosPorEscritorio?NomeRelacional={NomeRelacional}&Token={Token}&codEscritorio={codEscritorio}",
+					"protocol": "https",
+					"host": [
+						"advocacia",
+						"inovajuris",
+						"com",
+						"br"
+					],
+					"path": [
+						"api",
+						"AndamentoProcessual",
+						"BuscaNovosAndamentosPorEscritorio"
+					],
+					"query": [
+						{
+							"key": "NomeRelacional",
+							"value": "{NomeRelacional}"
+						},
+						{
+							"key": "Token",
+							"value": "{Token}"
+						},
+						{
+							"key": "codEscritorio",
+							"value": "{codEscritorio}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "64cfd2e4-7a52-4903-ac94-48ddb05bcbf8",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "44f795c2-5455-46cf-882e-76f7a7bec44a",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "5c13fe82-6f39-4354-b3d5-2b60cf3b4ccb",
+			"key": "NomeRelacional",
+			"value": "b93bb884d72a1bda9ec5d08efc6354c5",
+			"type": "string"
+		},
+		{
+			"id": "c68ce2aa-6e27-47ab-9b0b-d5f9c90ec878",
+			"key": "Token",
+			"value": "inovajuris",
+			"type": "string"
+		},
+		{
+			"id": "99b2708d-c80b-43ae-9a48-a4f3d1d8364d",
+			"key": "url",
+			"value": "https://advocacia.inovajuris.com.br/",
+			"type": "string"
 		}
 	]
 }
